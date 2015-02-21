@@ -34,6 +34,15 @@ The script performs the following activities in order
 * Compute average of features for subject and activity
 * Write tidy data to file
 
+The final output looks like - 
+```{r}
+> head(dfFinal[1:4], 3)
+  subject activity timeBodyAccelerometer-mean()-X timeBodyAccelerometer-mean()-Y
+1       2  WALKING                      0.2571778                    -0.02328523
+2       2  WALKING                      0.2860267                    -0.01316336
+3       2  WALKING                      0.2754848                    -0.02605042
+```
+
 ## Generating output
 
 Creates the a file called tidy_data.txt that contains the final "cleansed" output in the current working directory using the write.table function
